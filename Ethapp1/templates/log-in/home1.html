@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Login Form</title>
+  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+     <link rel="stylesheet" type="text/css" href="{% static 'reset.css'%}">
+
+    <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="login" method='POST'>
+  <form id="login_form">
+    {% csrf_token %}
+    <div class="field_container">
+ 
+      <a class="btn btn-primary" href="{% url 'EthApp' %}" role="button">send</a>
+      </button>
+    </div>
+   
+</form>
+</body>
+
+</html>

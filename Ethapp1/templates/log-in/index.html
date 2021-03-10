@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Login Form</title>
+  
+
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+     <link rel="stylesheet" type="text/css" href="{% static 'reset.css'%}">
+
+    <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="login" >
+  <form id="login_form" method='POST'>
+    {% csrf_token %}
+    <div class="field_container">
+      <input type="text" name="address1" placeholder="Address">
+    </div>
+     <div class="field_container">
+      <input type="text" name="address2" placeholder="Destinated Address">
+    </div>
+    <div class="field_container">
+      <input type="password" name="privatekey" placeholder="Private key">
+    </div>
+
+    <div class="field_container">
+      <input type="text" name="value" placeholder="Amount">
+      
+      </div>
+      <div class="field_container">
+      <button id="sign_in_button">
+        <span type="submit" class="button_text">Send</span>
+      </button>
+       </div>
+      </form>
+    </div>
+
+    
+</body>
+
+</html>
